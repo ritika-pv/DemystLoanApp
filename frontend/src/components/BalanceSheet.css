@@ -1,0 +1,89 @@
+/* Default styles for the table */
+
+.sort-buttons{
+    margin-top: 20px;
+}
+.basic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .basic-table th,
+  .basic-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .basic-table {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  
+    .basic-table th,
+    .basic-table td {
+      padding: 4px;
+    }
+  }
+
+
+
+
+
+  /* Sorting buttons */
+.sort-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sort-buttons button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .sort-buttons button.active {
+    background-color: #0056b3; /* Darker blue for active button */
+  }
+  
+  .sort-buttons button:hover:not(.active) {
+    background-color: #0056b3; /* Darker blue on hover for non-active buttons */
+  }
+  
+  /* Pagination buttons */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    padding: 6px 12px;
+    margin: 0 2px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .pagination button.active {
+    background-color: #0056b3; /* Darker blue for active button */
+  }
+  
+  .pagination button:hover:not(.active) {
+    background-color: #0056b3; /* Darker blue on hover for non-active buttons */
+  }
+  
+  

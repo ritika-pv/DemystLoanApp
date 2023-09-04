@@ -1,0 +1,43 @@
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .result-image {
+    width: 100%; /* Set image width to 100% of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    
+  }
+  .result-image img{
+    width: 500px;
+  }
+  
+  .result-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: left; /* Adjust text alignment to the left */
+  }
+  
+  /* Media query for desktop view */
+  @media (min-width: 768px) {
+    .result-container {
+      flex-direction: row; /* Display elements side by side on desktop */
+      align-items: center; /* Center both horizontally and vertically */
+    }
+  
+    .result-image {
+      width: 50%; /* Set image width to 50% for desktop */
+      max-width: 100%; /* Ensure the image doesn't exceed its container */
+      margin-right: 20px; /* Add spacing between image and result box */
+      margin-bottom: 0; /* Remove margin at the bottom */
+    }
+  }
+  
